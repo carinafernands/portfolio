@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Certificados</h2>
+<ng-container *ngFor="let item of arrayCertificados; trackBy: trackByFn">
+    <details>
+      <summary>
+        <p>
+          <strong>{{item.summary.strong}}</strong>
+          {{item.summary.p}}
+        </p>
+      </summary>
+
+      <article [innerHTML]="item.text"></article>
+    </details>
+
+  </ng-container>
+</div>
